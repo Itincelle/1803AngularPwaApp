@@ -1,4 +1,10 @@
 montant euro :
- <input type="number"  [(ngModel)]="montantEuro" /><br/>                      <!-- pour pouvoir utilisé ngModel il faut ajouter dans app.module.ts  FormsModule l import en haut et dans imports  (comme dans la page 41/155 de pdf angular_v2_v4....)-->
- <input type="button"  value="Euro to Franc" (click)="onConversion($event)"/><br/>
+ <input type="number"  [(ngModel)]="montantEuro" /><br/><br/>
+                    <!-- pour pouvoir utilisé ngModel il faut ajouter dans app.module.ts  FormsModule l import en haut et dans imports  (comme dans la page 41/155 de pdf angular_v2_v4....)-->
+ <input type="button"  value="Euro to Franc" class="btn btn-primary" (click)="onConversion($event)"/><br/>
+
+ <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> <br/>
+
+
+
  montant franc : {{montantFranc}}
