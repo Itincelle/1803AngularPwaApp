@@ -1,3 +1,4 @@
-<p>
-  news works!
-</p>
+numNews : <input [(ngModel)]="numNews" /><br/>
+<input type="button" value="get news"   (click)="onGetNews($event)"/><br/>
+
+ news : {{news | json}}       <!--pipe  psk on recoit des objets java script  et on veut les afficher en mode json...a ce moment la on peut essaier notre application sans node js..les données simulé sans dans le ts-->
